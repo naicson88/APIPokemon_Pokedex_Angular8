@@ -20,5 +20,9 @@ export class ApiService {
     return this.http.get<any>(this.base_url + 'pokemon/' + pokemon)
   }
 
+  public getPokemonInfo(idPokemon): Observable<any>{
+    return this.http.get(`${this.base_url}/pokemon-species/${idPokemon}`);
+  }
+
 }
 

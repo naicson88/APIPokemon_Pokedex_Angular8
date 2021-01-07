@@ -1,0 +1,20 @@
+label {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+span {
+    font-weight:bold;
+}
+
+#pokemonDetailsDiv{
+float:right;
+border: solid thin;
+ padding: 20px; 
+ background-color: #30a7d7;
+  border-radius: 10px;
+  margin-right: 20%;
+  margin-top: 5%;
+  width: 40%;
+}

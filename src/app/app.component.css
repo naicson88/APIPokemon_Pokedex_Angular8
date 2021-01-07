@@ -8,28 +8,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .toolbar {
-    height: 100px;
-    margin: -8px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
 
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
+ 
 
   
 
@@ -81,9 +61,13 @@
 
   .card-div{
     border: solid thin;
-    width: 80%;
+    width: fit-content;
+    max-width: 80%;
     margin: -10px auto 20px auto;
+    height: 50%;
     padding: 10px;
+    border-radius: 5px;
+    border-color: #BEBEBE;
   }
 
   .sub-div-cards{
@@ -97,13 +81,13 @@
     padding: 10px;
     position: relative;
     margin-top: 15px;
-  }
-.example-header-image {
-  border-radius: 200px;
-  background-size: cover;
-  background-color: white;
-}
+    background-color: #BEBEBE;
 
+  }
+
+  .mat-card-subtitle{
+    font-size: 12px;
+  }
 .mat-button{
   background-color: #CD5C5C;
   color: white;
@@ -113,6 +97,11 @@
 
 .mat-card-actions .mat-button:first-child, .mat-card-actions .mat-raised-button:first-child, .mat-card-actions .mat-stroked-button:first-child {
   margin-left: 40px;
+}
+
+.mat-card-header .mat-card-subtitle:not(:first-child) {
+  margin-left: -16px;
+
 }
 
 .mat-card-image{
@@ -131,6 +120,15 @@ mat-label{
 /* input color class */
 ::ng-deep input.mat-input-element {
   color: #484a4c;
+}
+
+.typeofpokemon{
+  border: solid thin #BEBEBE;
+  border-radius: 6px;
+  padding: 4px;
+  color: white;
+ 
+
 }
 
 

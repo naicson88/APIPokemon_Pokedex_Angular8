@@ -1,0 +1,31 @@
+<div *ngFor="let detalhes of pokemonDetalhe">
+
+  <h2 mat-dialog-title style="border-radius: 15px; width:fit-content; padding: 10px;" [style.backgroundColor]="styleOfTypePokemon(detalhes.type1)">
+    {{detalhes.name |  titlecase}}</h2>
+  <mat-dialog-content class="mat-typography">
+    <p><i>{{detalhes.info}} </i> </p>
+      <img src="{{detalhes.image}}" width="30%">
+  
+      <div id="pokemonDetailsDiv" > 
+  
+          <label for="numero"> Numero:  &nbsp;</label>
+          <span id="numero"> {{detalhes.numero}} </span> <br><br>
+          <label for="tipo"> Tipo: &nbsp; </label>
+          <span id="tipo"> <span>{{detalhes.type1 |  titlecase}}</span>  <span> {{detalhes.type2 |  titlecase}}</span> </span><br><br>
+          <label for="tipo"> Habilidades:  &nbsp;</label>
+          <span id="tipo"> {{detalhes.hability1  |  titlecase}} / {{detalhes.hability2 |  titlecase}}</span><br><br>
+          <label for="desenvolve"> Peso:  &nbsp;</label>
+          <span id="desenvolve">{{detalhes.peso}} kg</span>
+       </div>
+  
+  
+    <div id="pokemonImage" width="400px" height="450px" style="background-color: yellow;"></div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Fechar</button>
+  </mat-dialog-actions>
+
+</div>
+
+
+

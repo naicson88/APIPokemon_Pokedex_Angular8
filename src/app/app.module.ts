@@ -13,10 +13,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipeModule } from 'ngx-filter-pipe';
 
 
+import { HeadComponent } from './components/head/head.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeadComponent ,
+    PokemonDetailComponent
 
   ],
   imports: [
@@ -29,7 +37,9 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
-    FilterPipeModule
+    FilterPipeModule,
+    AppRoutingModule,
+    MatDialogModule 
     
   ],
   providers: [HttpClient, ApiService],
